@@ -1,22 +1,195 @@
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<title>Engineering Team 1</title>
-	<style type="text/css" media="screen">
-		html {
-			font-family: 'Courier New', monospace;
-			background-color: #000000;
-			color: #FFFFFF;
-		}
-	</style>
-</head>
-
+<html>
+<title>  Donation Contraption </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <body>
-	<h1 style="color: lime;">Honors Engineering Team 1</h1>
-	<h2 style="color: #9900ff;">Donation Contraption Project</h2>
+
+<!--https://www.w3schools.com/w3css/default.asp-->
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b><t>DONATION CONTRAPTION PROJECT</t></b>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#ourcause" class="w3-bar-item w3-button">Our Cause</a>
+      <a href="#donate" class="w3-bar-item w3-button">Donate</a>
+      <a href="#howitworks" class="w3-bar-item w3-button">How It Works</a>
+      <a href="#ourteam" class="w3-bar-item w3-button">Our Team</a>
+      <a href="#learnmore" class="w3-bar-item w3-button">Learn More</a>
+      <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+      
+    </div>
+  </div>
+</div>
+<!--<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"> THIS IS THE FORMAT FOR IMAGES!!>
+<!-- Header -->
+
+<!-- embed a link <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiZxnJm0f8iEP1d6uvAuOsTpIS8I5519jIUbM-ceOrJM5D_A/viewform">link text</a> --> 
+
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="ourcause">
+    
+    
+
+    <section>
+<article>
+    <h3 style="font-family:Syne" class="w3-border-bottom w3-border-light-grey w3-padding-16">Our Cause</h3>
+    <h4 style="font-family:Oswald" > THE PROJECT </h4>
+     
+      <p style="font-family:Quicksand"> For our Honors Engineering semester project, we were tasked with creating a self-sustaining donation incentive machine in order to raise money for the Food Bank of Central and Eastern North Carolina. The project was split into four different parts: website design, python scripting, electrical engineering, and mechanical engineering. For our project, we decided to have a ferris wheel spin around with different LED light patterns everytime a donation is made. A camera will then record the actions and email them directly to the donor. </p>
+    <div>
+    <h4 style="font-family:Oswald" > <b> THE CHARITY </b> </h4>
+ 
+    <p style="font-family:Quicksand"> As a class we voted on a charity and decided to donate to the Food Bank of Central and Eastern North Carolina. The Food Bank has provided food for people facing hunger in 34 separate counties for 40 years. Click on the "Learn More" tab above to find more information on the Food Bank, its history, and current projects.
+    </p> </article>
+  
+  <articletwo>
+    <center> <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3youhVlM0FsDagN497Oc9eDD1A1PiXvZspZbKZD4fmJ6sX8xFyYgoaLWhP-Vz1kl2tSHgd0kHovg_/pubhtml?gid=473159344&amp;single=true&amp;widget=true&amp;headers=false" title="Running Total" height="205" width="490" style="border:none;"></iframe> </center>
+    
+    
+  </articletwo>
+</section>
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="donate">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-family:Syne">Donate!</h3>
+ 
+    <p class="dgcenter"  align="left" style="font-family:Quicksand"> Once you <a href="https://secure.foodbankcenc.org/site/Donation2?df_id=10523&mfc_pref=T&10523.donation=form1&chosen=60&s_src=subfootercircle&s_subsrc=website"> donate through the Food Bank</a>, you should receive an email confirmation receipt. Once you get that email, find the <i> donation transaction number</i>. Use this number along with the rest of your information to fill out this form. Once your donation gets sent through our google form, the total will be added to the number above. </p> 
+    <div class="w3-center" class="w3-container w3-padding-32" > <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiZxnJm0f8iEP1d6uvAuOsTpIS8I5519jIUbM-ceOrJM5D_A/viewform" title="Donation Form" width="1000" height="600" style="border:none"> </iframe>
+    
+<article id="howitworks">
+<div  class="w3-container w3-padding-32">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-family:Syne">How It Works</h3>
+    <p   align="left" style="font-family:Quicksand"> Your donation will ultimately power our ferris wheel and make it spin and light up. There are a lot of other steps, however, that go into the process. The diagram to the right shows how exactly the information is processed from step to step: </p> 
+
+  <p align="left"><i> 1. What you're viewing right now is the first piece of the project. This custom website holds project and charity info. Your donation will be tracked through the google form above. </p>
+
+  <p align="left"> 2. The Python script will take the donation information from the google form, verify it, and then send information that a donation has been made to the arduino. It will also start recording a video of the wheel in action.  </p> 
+  <p align="left"> 3. Once the arduino receives info that a donation has been made, it will trigger a sequence that spins the ferris wheel and starts the LED lights. </p> 
+  <p align="left"> 4. After the wheel stops spinning, the video will be uploaded to Google Drive and emailed to the donor. </p></i></article>
+<articletwo><img src="pics/Diagram.jpg" alt="Diagram" style="width:100%"></articletwo>
+
+ <div class="w3-container w3-padding-32" >
+   
+
+    <h3  id="ourteam" class="w3-border-bottom w3-border-light-grey w3-padding-16" align="left"style="font-family:Syne" >Our Team </h3>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/profile/david.jpeg" alt="David" style="width:100%">
+       <h3 style="font-family:Oswald" style=>   David Gring </h3>
+      <p class="w3-opacity" style="font-size:100%" style="font-family:Oswald" ><b> <i> WEBSITE DESIGN</b></i></p>
+      <p align="left" style="font-family:Quicksand">David's role as website designer and developer is to create a visually appealing and functioning site that can collect donations and transmit that information to the Python script. You'll also notice some information and background about both the semester project and our chosen charity. </p>
+      <p><button class="w3-button w3-light-grey w3-block" ><a    href="mailto:dgring2021@ravenscroft.org"> Contact</button></a> </p> </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/profile/connor.jpeg"alt="Connor" style="width:100%">
+      <h3 style="font-family:Oswald">Connor Phillips</h3>
+      <p class="w3-opacity" style="font-size:100%" style="font-family:Oswald" ><b> <i> SOFTWARE ENGINEER</b></i></p>
+      <p align="left" style="font-family:Quicksand"> Connor's role as the python software engineer is to transfer the information from the donation form to the electrical portion of the project. This is a key step in sending the signal to our machine. His job also includes collecting the donor's email info to send them a video of the machine in action.</p>
+      <p><button class="w3-button w3-light-grey w3-block" ><a    href="mailto:connorphillips2021@ravenscroft.org"> Contact</button></a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/profile/adrian.jpeg"style="width:100%" alt="Adrian" >
+      <h3 style="font-family:Oswald">Adrian Tong</h3>
+      <p class="w3-opacity" style="font-size:100%" style="font-family:Oswald" ><b> <i> ELECTRICAL ENGINEER</b></i></p>
+      <p align="left" style="font-family:Quicksand"> Adrian's role as the electrical engineer is crucial in making the machine run. Upon receiving donation info, the Arduino triggers a motor that spins the wheel and starts the lights. This process is one of the most dificult, as the many wires have to avoid gettingh tangled during the spin.</p>
+      <p><button class="w3-button w3-light-grey w3-block" ><a    href="mailto:atong2021@ravenscroft.org"> Contact</button></a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="pics/profile/paige.jpeg"alt="Paige" style="width:100%">
+      <h3 style="font-family:Oswald" >Paige Bastek </h3>
+      <p class="w3-opacity"style="font-size:100%" style="font-family:Oswald" ><b> <i> MECHANICAL ENGINEER</b></i></p>
+      <p align="left" style="font-family:Quicksand">Paige runs the aesthetic and sustainable aspects of the machine. She used 3D printing to form precise parts of the wheel that can hold the wires and the electrical components, while also spinning effectively. She carefully thought and planned the different materials and dimensions needed.  </p> 
+            <p><button class="w3-button w3-light-grey w3-block" ><a    href="mailto:pbastek2021@ravenscroft.org"> Contact</button></a></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="learnmore">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" align="left" style="font-family:Syne"  >Learn More</h3>
+    <p style="font-family:Quicksand" align="left" >Follow the links below to learn more about the Food Bank of Central and Eastern North Carolina:</p>
+    <p style="font-family:Quicksand" align="left" > <a href="https://foodbankcenc.org/">Food Bank Main Page </a> <p>
+     <p style="font-family:Quicksand" align="left" > <a href="https://foodbankcenc.org/about-us/our-story/">About the Food Bank</a> <p>
+  <p style="font-family:Quicksand" align="left" > <a href="https://foodbankcenc.org/our-work/hunger-in-our-area/">North Carolina Hunger Facts</a> <p>
+  
+  <p align="left" > <a href="https://foodbankcenc.org/get-involved/volunteer/">Volunteer Information</a> <p>
+    
+  </div>
+  
+<!-- Image Gallery -->
+<div class="w3-container w3-padding-32" class="w3-border-bottom w3-border-light-grey w3-padding-16" id="gallery">
+<head> 
+<style>
+
+</style>
+</head>
+<body>
+
+<h3 align="left" style="font-family:Syne"  >Gallery</h3>
+<p style="font-family:Oswald"  class='notbold'><i><u>PICS OF OUR DESIGN PROCESS!</p></i></u>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pics/website.jpg">
+      <img src="pics/website.jpg" alt="Website Development" width="600" height="400" >
+    </a>
+    <div class="desc" style="font-family:Quicksand"  >A snapshot of David's website code</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pics/python.jpg">
+      <img src="pics/python.jpg" alt="Python Code" width="600" height="400">
+    </a>
+    <div class="desc" style="font-family:Quicksand"  >Connor working hard on his Python script</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pics/arduino.jpg">
+      <img src="pics/arduino.jpg" alt="Arduino Setup" width="600" height="400">
+    </a>
+    <div class="desc" style="font-family:Quicksand" >Adrian's first steps in the electrical setup</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pics/mechanical.jpg">
+      <img src="pics/mechanical.jpg" alt="Mechanical Design" width="600" height="400">
+    </a>
+    <div class="desc" style="font-family:Quicksand" >Paige's initial plan for the ferris wheel</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
 
 </body>
-
 </html>
+
